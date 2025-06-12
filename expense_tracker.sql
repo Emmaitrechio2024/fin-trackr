@@ -1,0 +1,19 @@
+CREATE DATABASE expense_tracker;
+
+USE expense_tracker;
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE transactions (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  amount DECIMAL(10, 2) NOT NULL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  date DATE NOT NULL DEFAULT CURRENT_DATE,
+  FOREIGN KEY (user_id) REFERENCES users(id)
+);
