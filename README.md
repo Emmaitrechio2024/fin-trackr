@@ -99,4 +99,4 @@ This project is free to use and modify. No license required.
 
 ---
 
-## 🔗 Live Link : fin-trackr.infinityfreeapp.com
+## 🔗 Live Link : https://fin-trackr.infinityfreeapp.com
