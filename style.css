@@ -1,0 +1,222 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+}
+
+.tracker {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px 25px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.tracker:hover {
+  transform: scale(1.01);
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  font-size: 26px;
+  color: #00e5ff;
+  margin-bottom: 25px;
+}
+
+/* Form Inputs */
+form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+form input:focus {
+  border-color: #00e5ff;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #00e5ff, #0099cc);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #00bcd4, #007acc);
+}
+
+/* Links */
+a {
+  color: #00e5ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Error Message */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+ul li {
+  color: #ff6b6b;
+  font-size: 13px;
+}
+
+/* Welcome */
+.welcome {
+  font-size: 20px;
+  font-weight: 500;
+  color: #00e5ff;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Logout Link */
+.logout {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  color: #ff4b4b;
+  font-weight: 600;
+}
+
+/* Transaction History */
+.transaction-history {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.transaction.income {
+  color: #66ff66;
+}
+
+.transaction.expense {
+  color: #ff6666;
+}
+
+.transaction .description {
+  font-weight: 500;
+}
+
+.transaction .amount {
+  font-weight: bold;
+}
+.delete-btn {
+  margin-left: 12px;
+  color: #ff4b4b;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+  color: #ff0000;
+}
+.history-link {
+  text-decoration: none;
+  color: #4facfe;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.history-link:hover {
+  color: #00f2fe;
+}
+.filter-form {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-form input,
+.filter-form button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.filter-form button {
+  background: #4facfe;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination {
+  margin-top: 1rem;
+}
+
+.pagination a {
+  padding: 6px 12px;
+  margin: 2px;
+  text-decoration: none;
+  background-color: #eee;
+  border-radius: 4px;
+  color: #333;
+}
+
+.pagination a.active {
+  background-color: #4facfe;
+  color: white;
+}
