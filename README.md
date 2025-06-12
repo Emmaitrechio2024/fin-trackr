@@ -1,7 +1,7 @@
 
 # 💸 Expense Tracker Web App
 
-A full-featured, user-friendly Expense Tracker built with PHP, MySQL, HTML, CSS, and JavaScript. It allows users to register, log in, and track their income and expenses, with a clean dashboard and detailed transaction history.
+A full-featured, user-friendly Expense Tracker built with PHP, MySQL, HTML, and CSS. It allows users to register, log in, and track their income and expenses, with a clean dashboard and detailed transaction history.
 
 ---
 
@@ -21,7 +21,7 @@ A full-featured, user-friendly Expense Tracker built with PHP, MySQL, HTML, CSS,
 
 ## 🧑‍💻 Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** HTML, CSS
 - **Backend:** PHP (Core PHP, no frameworks)
 - **Database:** MySQL
 - **Server:** XAMPP / LAMP / WAMP (local development)
@@ -33,19 +33,15 @@ A full-featured, user-friendly Expense Tracker built with PHP, MySQL, HTML, CSS,
 ```
 
 Expense Tracker/
-├── assets/
-│   └── style.css
-├── includes/
-│   └── db\_connect.php
+├── style.css
+├── connect.php
 ├── index.php
 ├── register.php
 ├── login.php
 ├── logout.php
 ├── transactions.php
-├── add\_transaction.php
-├── delete\_transaction.php
 ├── README.md
-└── .sql (for creating DB structure)
+└── expense_tracker.sql 
 
 ````
 
@@ -56,7 +52,7 @@ Expense Tracker/
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/expense-tracker.git
+git clone https://github.com/Emmaitrechio2024/fin-trackr.git
 ````
 
 2. **Import the Database**
@@ -80,16 +76,6 @@ $db = 'expense_tracker';
 
 * Start Apache and MySQL via XAMPP/WAMP
 * Open `http://localhost/Expense%20Tracker/` in your browser
-
----
-
-## 📝 Screenshots
-
-* **Dashboard:**
-  Displays current balance, total income, and expenses
-
-* **Transactions Page:**
-  Paginated, filterable, and searchable list of all transactions
 
 ---
 
